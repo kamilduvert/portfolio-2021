@@ -4,12 +4,13 @@ background-image: url('https://images.pexels.com/photos/3661238/pexels-photo-366
 background-size: cover;
 background-position: center;
 background-attachment: fixed;
-min-height: 100vh;
+height: 100vh;
+min-height: 500px;
 position: relative;
 
   &__content {
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 50%;
     width: 65%;
     transform: translate(-50%, -50%);

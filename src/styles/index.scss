@@ -24,6 +24,8 @@ body {
   font-family: 'Quicksand', sans-serif;
   color: $color-secondary;
   text-align: center;
+  height: 100%;
+  width: 100%;
 }
 
 h2 {
@@ -41,8 +43,10 @@ h3 {
   } 
 }
 
-label, input {
+label, input, textarea {
   display: block;
+  font-family: "Quicksand", sans-serif;
+  color: $color-secondary;
 }
 
 section {
