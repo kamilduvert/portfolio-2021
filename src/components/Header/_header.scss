@@ -1,0 +1,131 @@
+.header {
+  font-size: 0.8rem;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  padding: 20px;
+  transform: translateY(0px);
+  transition: transform .6s cubic-bezier(0.2, 0.8, 0.2, 1.2) 0s;
+
+  @include media('<=phone') {
+    background-color:$color-secondary;
+    color: $color-light;
+    transform: translateY(-20px);
+    padding-top: 40px;
+  }
+
+
+  &__logo {
+    font-size: 1rem;
+    cursor: pointer;
+
+    i {
+      font-size: 1rem;
+    }
+  }
+
+  &--active{
+    background-color:$color-secondary;
+    color: $color-light;
+    transform: translateY(-20px);
+    padding-top: 40px;
+  }
+}
+
+.nav {
+  letter-spacing: 0.2rem;
+  width: 60%;
+  margin: auto;
+  @include media('<=phone') {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+  }
+
+  &__item {
+    margin: 0 10px;
+  }
+
+  &__link {
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $color-light;
+      z-index: 1;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    &:hover::before {
+      transform-origin: left;
+      transform: scaleX(1);
+      transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+    }
+
+    &--active {
+      color: $color-primary;
+
+      &::before {
+        position: unset;
+
+      }
+    }
+  }
+}
+
+.dropdown {
+  &__icon {
+    display: none;
+    @include media('<=phone') {
+      display: block;
+      position: fixed;
+      top: 50%;
+      transform: translateY(50%);
+      right: 20px;
+      z-index: 99;
+    }
+  }
+
+  &__nav {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    z-index: 10;
+    background-color: $color-secondary;
+    transition: all 350ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+
+    &--active {
+      left: 0;
+    }
+
+    &__item {
+      font-size: 3rem;
+      margin: 15px;
+    }
+
+  }
+}

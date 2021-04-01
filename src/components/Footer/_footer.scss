@@ -1,0 +1,12 @@
+.footer {
+  padding: 30px;
+  color: $color-light;
+  background-color: $color-secondary;
+  margin-top: 20px;
+
+
+  &__text {
+    line-height: 1.5;
+    text-align: center;
+  }
+}
