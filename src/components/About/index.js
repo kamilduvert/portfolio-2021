@@ -35,7 +35,7 @@ const About = () => {
             Stack
           </h3>
           <div className="about__content">
-            <p>
+            <p className="about__content__text">
               <span className="--bold">Front-end</span> HTML, CSS, ES6 Javascript, SCSS, React, Redux, Axios, Leaflet, Gsap. <br />
               <span className="--bold">Back-end</span> Node.js, Express, PostgreSQL, Sequelize, Firebase, JWT, Heroku, MongoDB.
             </p>
@@ -45,13 +45,13 @@ const About = () => {
       </h3>
           <ul>
             <li className="about__content__descr">
-              <p>
+              <p className="about__content__text">
                 <span className="--bold">2021 </span>
                 <span> Web Developer Professional Certification (Bac+2) - Ecole O'Clock </span>
               </p>
             </li>
             <li className="about__content__descr">
-              <p>
+              <p className="about__content__text">
                 <span className="--bold">2010 </span>
                 <span> Master's Degree in Marketing & Strategy (Bac+5) - Université Paris Dauphine</span>
               </p>

@@ -12,6 +12,10 @@
     }
     align-items: center;
 
+    &__stack {
+      text-align: left;
+    }
+
     &__image {
       display: inline-block;
       width: 100px;

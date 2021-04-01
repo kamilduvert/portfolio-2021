@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      <p className="footer__text">Made in Paris with React, 🧡  and ☕ <br /> Copyright {currentYear}</p>
+      <p className="footer__text">Made in Paris with React and ☕ <br /> Copyright {currentYear}</p>
     </footer>
   )
 }
