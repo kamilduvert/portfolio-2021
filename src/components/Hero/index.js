@@ -21,7 +21,8 @@ const Hero = () => {
               800,
               'Musician 🎸',
               800,
-              'Cat Worshiper 🐱'
+              'Cat Worshiper 🐱',
+              800,
             ]}
           />
         </p>
