@@ -23,11 +23,11 @@
 
 
   &__logo {
-    font-size: 1rem;
+    font-size: 1.3rem;
     cursor: pointer;
 
     i {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
   }
 
@@ -94,15 +94,14 @@
 }
 
 .dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   &__icon {
     display: none;
+    font-size: 1.3rem;
     @include media('<=phone') {
       display: block;
-      position: fixed;
-      top: 50%;
-      transform: translateY(50%);
-      right: 20px;
-      z-index: 99;
     }
   }
 
@@ -110,7 +109,7 @@
     height: 100vh;
     width: 100%;
     position: fixed;
-    top: 70px;
+    top: 80px;
     left: -100%;
     z-index: 10;
     background-color: $color-secondary;
@@ -122,9 +121,32 @@
       left: 0;
     }
 
+    &__list {
+      margin-top: 60px;
+    }
+
     &__item {
-      font-size: 3rem;
-      margin: 15px;
+      font-size: 2.5rem;
+      margin: 30px;
+    }
+
+    &__link {
+      cursor: pointer;
+      position: relative;
+  
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $color-light;
+        z-index: 1;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s ease-in-out;
+      }
     }
 
   }
