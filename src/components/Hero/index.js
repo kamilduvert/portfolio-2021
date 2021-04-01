@@ -17,10 +17,11 @@ const Hero = () => {
             steps={[
               'Web Developer 💻',
               800,
-              'Diving instructor 🐟',
+              'Diving instructor 🐠',
               800,
               'Musician 🎸',
-              800
+              800,
+              'Cat Worshiper 🐱'
             ]}
           />
         </p>
