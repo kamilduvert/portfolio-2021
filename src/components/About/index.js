@@ -24,7 +24,7 @@ const About = () => {
             <img className="about__content__image" src={profilePic} alt="profile-kamil" />
             <div>
               <p>
-                I'm a 35 year-old French <span className="--bold">Fullstack Web Developer </span>based in Paris. After a few years working as a Marketing Consultant I decided to pursue my dream adventure. I worked as a diving instructor and resort manager for 5 years all around the world: Philippines, Maldives, Oman, Mexico, Honduras, Australia, Indonesia...
+                I'm a 34 year-old French <span className="--bold">Fullstack Web Developer </span>based in Paris. After a few years working as a Marketing Consultant I decided to pursue my dream adventure. I worked as a diving instructor and resort manager for 5 years all around the world: Philippines, Maldives, Oman, Mexico, Honduras, Australia, Indonesia...
             Today I'm on a new journey. I focus on writing simple and functional code to create intuitive applications.
             <br />
             The rest of the time, I enjoy coffee, playing the guitar and taking underwater pictures.

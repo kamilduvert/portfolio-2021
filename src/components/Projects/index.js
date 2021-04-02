@@ -7,6 +7,7 @@ import project1 from '../../assets/images/project-orizons.png';
 import project2 from '../../assets/images/project-rock.png';
 import project3 from '../../assets/images/project-ebpp.png';
 import project4 from '../../assets/images/project-portfolio.jpg';
+import project5 from '../../assets/images/project-movies.jpg';
 
 
 const About = () => {
@@ -45,7 +46,15 @@ const About = () => {
       description: '"My own Web Developer Portfolio responsive website"',
       stack: 'React.js, SCSS, FormSpree, Gsap animations',
       image: project4,
-      link: 'https://github.com/kamilduvert'
+      link: 'https://github.com/portfolio-2021'
+    },
+    {
+      id: 5,
+      title: "Movie Watchlist",
+      description: '"Keep in memory the movies you watched and you want to watch!"',
+      stack: 'React.js, Redux, SCSS, TheMovieDatabase API',
+      image: project5,
+      link: 'https://github.com/kamilduvert/movies-watchlist'
     },
   ]
 
