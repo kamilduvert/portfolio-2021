@@ -8,6 +8,7 @@ import project2 from '../../assets/images/project-rock.png';
 import project3 from '../../assets/images/project-ebpp.png';
 import project4 from '../../assets/images/project-portfolio.jpg';
 import project5 from '../../assets/images/project-movies.jpg';
+import project6 from '../../assets/images/project-chat.jpg';
 
 
 const About = () => {
@@ -55,6 +56,14 @@ const About = () => {
       stack: 'React.js, Redux, SCSS, TheMovieDatabase API',
       image: project5,
       link: 'https://github.com/kamilduvert/movies-watchlist'
+    },
+    {
+      id: 6,
+      title: "Real-time Chat",
+      description: '"Join a room and chat with your fellows "',
+      stack: 'React.js, React-Router, SCSS, Node.js Socket.io',
+      image: project6,
+      link: 'https://github.com/kamilduvert/simple-chat'
     },
   ]
 
