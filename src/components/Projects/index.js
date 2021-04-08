@@ -43,7 +43,7 @@ const About = () => {
     },
     {
       id: 4,
-      title: "Professional Porfolio",
+      title: "Professional Portfolio",
       description: '"My own Web Developer Portfolio responsive website"',
       stack: 'React.js, SCSS, FormSpree, Gsap animations',
       image: project4,
