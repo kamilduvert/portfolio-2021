@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-import { withRouter } from 'react-router-dom'
 import ReactGA from "react-ga";
 
 import Hero from "../Hero";
@@ -8,14 +6,11 @@ import Projects from "../Projects";
 import Contact from "../Contact";
 import Footer from "../Footer";
 
-const TRACKING_ID = process.env.REACT_APP_GA_TRAKING_ID;
+const TRACKING_ID = "UA-195872880-1";
 ReactGA.initialize(TRACKING_ID);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const App = () => {
-
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  })
 
   return (
     <div className="app">
@@ -28,4 +23,4 @@ const App = () => {
   );
 };
 
-export default withRouter(App);
+export default App;
