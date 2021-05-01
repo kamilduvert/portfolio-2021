@@ -95,7 +95,7 @@ const Contact = () => {
                 Send
               </button>
               {serverState.status && (
-                <p className={!serverState.status.ok ? "errorMsg" : ""}>
+                <p className={!serverState.status.ok ? "errorMsg" : "contact__form__confirmation"}>
                   {serverState.status.msg}
                 </p>
               )}
